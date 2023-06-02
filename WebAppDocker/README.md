@@ -9,3 +9,5 @@ docker container ls -a
 docker image list -a
 
 docker stop MyContainerName
+
+docker context ls

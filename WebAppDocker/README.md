@@ -11,3 +11,8 @@ docker image list -a
 docker stop MyContainerName
 
 docker context ls
+
+<PropertyGroup>
+	...
+	<DockerfileTag>multiton/dockerhub:WebAppDocker</DockerfileTag>
+</PropertyGroup>

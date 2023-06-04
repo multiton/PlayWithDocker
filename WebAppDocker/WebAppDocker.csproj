@@ -6,6 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>10602aff-db30-492a-960e-7191ea9c05fd</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerfileTag>multiton/dockerhub:WebAppDocker</DockerfileTag>
   </PropertyGroup>
 
   <ItemGroup>

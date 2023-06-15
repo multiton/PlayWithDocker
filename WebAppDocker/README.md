@@ -7,6 +7,7 @@ docker pull multiton/dockerhub:WebAppDocker
 
 docker container ls -a
 docker image list -a
+docker system prune -a
 
 docker stop MyContainerName
 

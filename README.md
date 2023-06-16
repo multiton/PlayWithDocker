@@ -1,7 +1,7 @@
 # PlayWithDocker (no Compose)
 
-## To build docker image from command line﻿, you must be in the Dockerfile folder,
-## but still use this syntax (-f ./Dockerfile is mandatory) so:
+To build docker image from command line﻿, you must be in the Dockerfile folder,  
+but still use this syntax (-f ./Dockerfile is mandatory) so:  
 
 1. cd E:\Projects\PureDockerNoCompose\WebAppDocker  
 2. docker build -f ./Dockerfile --force-rm -t multiton/dockerhub:WebAppDocker ..  

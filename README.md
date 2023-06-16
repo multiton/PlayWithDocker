@@ -1,4 +1,4 @@
-# PlayWithDocker (no Compose)
+## PlayWithDocker (no Compose)
 
 To build docker image from command line﻿, you must be in the Dockerfile folder,  
 but still use this syntax (-f ./Dockerfile is mandatory) so:  

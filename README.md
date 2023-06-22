@@ -8,6 +8,8 @@ but still use this syntax (-f ./Dockerfile is mandatory) so:
 
 docker run --name=MyContainerName --rm -p 8080:80 -d multiton/dockerhub:WebAppDocker  
 
+docker run --name=MyContainerName --rm --env=ASPNETCORE_ENVIRONMENT=Development --env=ASPNETCORE_URLS=https://+:443 --env=ASPNETCORE_HTTPS_PORT=443 -p 443:443 multiton/dockerhub:WebAppDocker  
+
 docker login -u multiton  
 docker push multiton/dockerhub:WebAppDocker  
 docker pull multiton/dockerhub:WebAppDocker  
@@ -24,3 +26,6 @@ docker context ls
 	...  
 	<DockerfileTag>multiton/dockerhub:WebAppDocker</DockerfileTag>  
 </PropertyGroup>  
+  
+Certificates (pfx-files) location:  
+C:\Users\<user-name>\AppData\Roaming\ASP.NET\Https

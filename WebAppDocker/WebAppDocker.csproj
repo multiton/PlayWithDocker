@@ -7,7 +7,22 @@
     <UserSecretsId>10602aff-db30-492a-960e-7191ea9c05fd</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 	<DockerfileTag>multiton/dockerhub:WebAppDocker</DockerfileTag>
+	<SignAssembly>True</SignAssembly>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CertStalker.pfx" />
+    <None Remove="WebAppDocker.pfx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="CertStalker.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="WebAppDocker.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />

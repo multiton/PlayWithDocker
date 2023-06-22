@@ -6,7 +6,12 @@ namespace WebAppDocker.Controllers
     [Route("[controller]")]    
     public class SystemController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<string> Get() => Ok(Environment.OSVersion);
+        [HttpGet("OSVersion")]
+        public ActionResult<string> GetOsVersion()
+            => Ok(Environment.OSVersion);
+
+        [HttpGet("Environment")]
+        public ActionResult<string> GetEnvironment()
+            => Ok(Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT"));
     }
 }

@@ -8,7 +8,10 @@ but still use this syntax (-f ./Dockerfile is mandatory) so:
 
 docker run --name=MyContainerName --env=ASPNETCORE_URLS=https://+:443 -p 443:443 multiton/dockerhub:WebAppDocker  
 
-https://localhost/swagger/index.html
+https://localhost/swagger/index.html  
+
+// Save docker-image to file:  
+docker save -o f:\temp\dockerimage.tar multiton/dockerhub:WebAppDocker  
 
 docker login -u multiton  
 docker push multiton/dockerhub:WebAppDocker  

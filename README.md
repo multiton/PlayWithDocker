@@ -13,6 +13,9 @@ https://localhost/swagger/index.html
 // Save docker-image to file:  
 docker save -o f:\temp\dockerimage.tar multiton/dockerhub:WebAppDocker  
 
+// Copy image to another machine, and then:  
+docker load -i d:\TEMP\dockerimage.tar  
+
 docker login -u multiton  
 docker push multiton/dockerhub:WebAppDocker  
 docker pull multiton/dockerhub:WebAppDocker  

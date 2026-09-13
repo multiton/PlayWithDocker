@@ -21,6 +21,7 @@ namespace WebAppDocker.Controllers
         [HttpPost(Name = "PostHelloSerega")]
         public ActionResult<string> Post()
         {
+            // Just to play with docker...
             // fetch('https://localhost:8443/Hello', {method: 'POST'})
             //    .then(response => response.text())
             //    .then(data => console.log(data));

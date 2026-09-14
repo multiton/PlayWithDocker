@@ -1,6 +1,6 @@
 ## PlayWithDocker (no Compose)
 
-Do all setps in powershell only. DO NOT use Visual Studio.`
+Do all setps in powershell only. DO NOT use Visual Studio.
 To build docker image from command line﻿, you must be in the Dockerfile folder,  
 but still use this syntax (-f ./Dockerfile is mandatory) so:  
 
